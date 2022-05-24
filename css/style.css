@@ -28,6 +28,11 @@ a {
 
 header {
   font-family: Helvetica, arial, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
 }
 
 /* header top */
@@ -105,7 +110,10 @@ header {
 
 main {
   font-family: Arial, sans-serif;
+  margin-top: 120px;
 }
+
+/*** sezione jumbotron ***/
 .ms_jumbotron {
   background-image: url(../img/jumbo-bg.png);
   background-repeat: no-repeat;
@@ -147,6 +155,16 @@ main {
 }
 .ms_inv_col {
   display: none;
+}
+
+/*** sezione thumbnails ***/
+.ms_thumbnails {
+  padding-top: 20px;
+}
+.test-box {
+  width: 100px;
+  height: 50px;
+  background-color: aqua;
 }
 
 /********* REGOLE RESPONSIVE **********/
