@@ -8,13 +8,81 @@
 }
 
 /* immagini */
-
 img {
   width: 100%;
   display: block;
 }
 
-/* todo  */
-body {
-  background-color: aqua;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/***** HEADER *****/
+/* header top */
+.header-top {
+  display: flex;
+  justify-content: flex-end;
+  background-color: black;
+  height: 40px;
+  text-align: right;
+}
+.header-top img {
+  width: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* headeer bottom */
+.header-bottom {
+  /* todo test */
+  background-color: lightblue;
+}
+.ps_logo {
+  width: 40px;
+  margin-right: 10px;
+}
+/* elemento che restringe header bottom */
+.ms_header_box {
+  padding: 0 10px;
+}
+
+/* parte sinistra di header bottom */
+.ms_header_left_menu {
+  display: flex;
+  align-items: center;
+}
+.ms_header_left_menu li {
+  display: inline;
+}
+.ms_header_xtd_menu_left,
+.ms_header_xtd_menu_right {
+  display: none;
+}
+
+/* parte destra di header bottom */
+.ms_burger_menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.ms_burger_menu i {
+  margin-left: 10px;
+  font-size: 1.3rem;
+}
+
+/********* REGOLE RESPONSIVE **********/
+/* layout large */
+@media screen and (min-width: 992px) {
+  .ms_header_xtd_menu_left,
+  .ms_header_xtd_menu_right {
+    display: inline-block;
+  }
 }
