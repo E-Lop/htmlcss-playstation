@@ -162,12 +162,65 @@ main {
 /*** sezione thumbnails ***/
 .ms_thumbnails {
   padding-top: 20px;
+  padding-bottom: 100px;
 }
 .ms_thumbnails img {
   border-radius: 15px;
 }
+.ps5_hardware p {
+  font-size: 1.5rem;
+}
+
+/*** sezione PS5 Hardware ***/
+.ps5_hardware_intro {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.claim {
+  color: #0072ce;
+}
+.sub_text {
+  color: #727272;
+}
+.ps5_hardware h2 {
+  font-size: 2.8rem;
+}
+.ms_btn_blue {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  border-radius: 20px;
+}
+.ms_sm_hw_thumb {
+  padding: 20px 0;
+}
+
+.ms_inv_hw_description {
+  color: gray;
+  font-size: 0.8rem;
+  display: none;
+}
+.ms_hw_card {
+  height: 100%;
+}
+.ms_highlighted {
+  border-bottom: 2px solid #3991d9;
+}
+.ms_highlighted .ms_inv_hw_description {
+  color: black;
+}
 
 /********* REGOLE RESPONSIVE **********/
+/* layout medium */
+@media screen and (min-width: 768px) {
+  .ms_inv_hw_description {
+    display: block;
+  }
+  .ms_sm_hw_thumb {
+    justify-content: space-between;
+  }
+}
+
 /* layout large */
 @media screen and (min-width: 992px) {
   .ms_header_xtd_menu_left,
