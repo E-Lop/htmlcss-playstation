@@ -145,6 +145,9 @@ main {
 .ms_jumbotron h2 {
   font-size: 2.5rem;
 }
+.ms_inv_col {
+  display: none;
+}
 
 /********* REGOLE RESPONSIVE **********/
 /* layout large */
@@ -155,5 +158,8 @@ main {
   }
   .ms_burger_menu_narrow_screens {
     display: none;
+  }
+  .ms_inv_col {
+    display: block;
   }
 }
