@@ -45,9 +45,11 @@ a {
   /* todo test */
   background-color: lightblue;
 }
+/* altezza piu margine formano altezza header-bottom */
 .ps_logo {
   width: 40px;
   margin-right: 10px;
+  margin: 20px 0;
 }
 /* elemento che restringe header bottom */
 .ms_header_box {
@@ -61,6 +63,7 @@ a {
 }
 .ms_header_left_menu li {
   display: inline;
+  padding: 0 5px;
 }
 .ms_header_xtd_menu_left,
 .ms_header_xtd_menu_right {
@@ -73,9 +76,27 @@ a {
   justify-content: flex-end;
   align-items: center;
 }
-.ms_burger_menu i {
+.ms_burger_menu_narrow_screens i {
   margin-left: 10px;
   font-size: 1.3rem;
+}
+.ms_btn_drk_rounded {
+  color: #fff;
+  background-color: #212529;
+  border-color: #212529;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+.search_lens {
+  width: 40px;
+  display: inline-block;
+}
+
+/* elementi comuni display-bottom */
+.ms_header_xtd_menu_left i,
+.ms_header_xtd_menu_right i {
+  color: gray;
+  font-size: 0.8rem;
 }
 
 /********* REGOLE RESPONSIVE **********/
@@ -84,5 +105,8 @@ a {
   .ms_header_xtd_menu_left,
   .ms_header_xtd_menu_right {
     display: inline-block;
+  }
+  .ms_burger_menu_narrow_screens {
+    display: none;
   }
 }
