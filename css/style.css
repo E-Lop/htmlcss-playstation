@@ -25,6 +25,11 @@ a {
 }
 
 /***** HEADER *****/
+
+header {
+  font-family: Helvetica, arial, sans-serif;
+}
+
 /* header top */
 .header-top {
   display: flex;
@@ -41,10 +46,7 @@ a {
 }
 
 /* headeer bottom */
-.header-bottom {
-  /* todo test */
-  background-color: lightblue;
-}
+
 /* altezza piu margine formano altezza header-bottom */
 .ps_logo {
   width: 40px;
@@ -97,6 +99,34 @@ a {
 .ms_header_xtd_menu_right i {
   color: gray;
   font-size: 0.8rem;
+}
+
+/****** MAIN ******/
+
+main {
+  font-family: Arial, sans-serif;
+}
+.ms_jumbotron {
+  background-image: url(../img/jumbo-bg.png);
+  color: white;
+
+  /* todo test */
+  height: 675px;
+}
+
+/* bottone acquista ora */
+.ms_btn_red {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  border-radius: 20px;
+}
+/* logo del videogioco dimensioni relative */
+.ms_game_hero_logo {
+  width: 60%;
+}
+.ms_jumbotron h2 {
+  font-size: 2.5rem;
 }
 
 /********* REGOLE RESPONSIVE **********/
