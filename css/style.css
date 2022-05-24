@@ -108,10 +108,27 @@ main {
 }
 .ms_jumbotron {
   background-image: url(../img/jumbo-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
   color: white;
 
   /* todo test */
   height: 675px;
+}
+
+.ms_jumbotron .container {
+  height: 100%;
+}
+.ms_jumbotron .container .align-items-end {
+  height: 100%;
+}
+.ms_jumbo_text_col > * {
+  margin: 20px 0;
+}
+
+/* override del margine sotto il bottone rosso */
+.ms_jumbo_text_col .ms_btn_red {
+  margin-bottom: 40px;
 }
 
 /* bottone acquista ora */
