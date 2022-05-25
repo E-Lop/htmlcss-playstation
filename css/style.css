@@ -220,6 +220,23 @@ main {
   height: 956px;
 }
 
+/*** sezione nuove uscite ***/
+.new_release {
+  background-color: #1f1f1f;
+  color: white;
+  padding-bottom: 60px;
+}
+.new_release h2 {
+  padding-top: 30px;
+  font-size: 2.5rem;
+}
+.new_release p {
+  font-size: 1.8rem;
+}
+.new_release img {
+  border-radius: 15px;
+}
+
 /********* REGOLE RESPONSIVE **********/
 /* layout medium */
 @media screen and (min-width: 768px) {
