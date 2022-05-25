@@ -237,6 +237,22 @@ main {
   border-radius: 15px;
 }
 
+/*** sezione esplora ***/
+.ms_explore h2 {
+  padding-top: 30px;
+  font-size: 2.5rem;
+}
+.ms_explore .sub_text {
+  padding-bottom: 30px;
+}
+.ms_explore .row {
+  padding-bottom: 60px;
+}
+.ms_explore .sub_text {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
 /********* REGOLE RESPONSIVE **********/
 /* layout medium */
 @media screen and (min-width: 768px) {
