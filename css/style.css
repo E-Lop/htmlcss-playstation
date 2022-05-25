@@ -329,9 +329,7 @@ footer {
   filter: invert(1);
   width: 50%;
 }
-footer a {
-  font-size: 0.6rem;
-}
+
 .second_row {
   padding-top: 50px;
 }
