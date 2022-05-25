@@ -318,6 +318,28 @@ main {
   font-weight: bold;
 }
 
+/***** FOOTER *****/
+footer {
+  background-color: #00439c;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+.ms_logo_big {
+  filter: invert(1);
+  width: 50%;
+}
+footer a {
+  font-size: 0.6rem;
+}
+.second_row {
+  padding-top: 50px;
+}
+.f_logo_2 {
+  width: 150px;
+  padding-bottom: 10px;
+}
+
 /********* REGOLE RESPONSIVE **********/
 /* layout medium */
 @media screen and (min-width: 768px) {
