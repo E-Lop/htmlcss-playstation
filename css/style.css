@@ -339,6 +339,10 @@ footer a {
   width: 150px;
   padding-bottom: 10px;
 }
+.ms_more_info {
+  text-decoration: underline;
+  font-size: 1rem;
+}
 
 /********* REGOLE RESPONSIVE **********/
 /* layout medium */
