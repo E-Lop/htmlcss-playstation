@@ -156,7 +156,7 @@ main {
 .ms_jumbotron h2 {
   font-size: 2.5rem;
 }
-.ms_inv_col {
+.ms_inv_col1 {
   display: none;
 }
 
@@ -253,6 +253,25 @@ main {
   font-size: 1.2rem;
 }
 
+/*** sezione playstation plus ***/
+.ms_playstation_plus {
+  background-color: #bebcbb;
+}
+.ms_playstation_plus p {
+  font-weight: bold;
+}
+
+.ms_btn_gray {
+  color: #3a6de5;
+  font-weight: bold;
+  background-color: #d9dadc;
+  border-color: #d9dadc;
+  border-radius: 15px;
+}
+.ms_inv_col2 {
+  display: none;
+}
+
 /********* REGOLE RESPONSIVE **********/
 /* layout medium */
 @media screen and (min-width: 768px) {
@@ -261,6 +280,9 @@ main {
   }
   .ms_sm_hw_thumb {
     justify-content: space-between;
+  }
+  .ms_inv_col2 {
+    display: block;
   }
 }
 
@@ -273,7 +295,7 @@ main {
   .ms_burger_menu_narrow_screens {
     display: none;
   }
-  .ms_inv_col {
+  .ms_inv_col1 {
     display: block;
   }
 }
