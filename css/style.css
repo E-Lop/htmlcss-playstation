@@ -271,6 +271,10 @@ main {
 .ms_inv_col2 {
   display: none;
 }
+/* override per non rendere la colonna troppo alta per l'immagine a dx */
+.ms_playstation_plus .ms_game_hero_logo {
+  margin: 10px 0;
+}
 
 /*** sezione sconti ***/
 .sconti {
@@ -285,6 +289,33 @@ main {
   font-size: 1.6rem;
   margin-bottom: 40px;
   line-height: 1.2;
+}
+
+/*** sezione playstation now ***/
+.ms_playstation_now {
+  background-color: #161c3b;
+  color: white;
+}
+.btn_off-white {
+  color: #000;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border-color: #f5f5f5;
+  border-radius: 20px;
+}
+.ms_playstation_now .ms_jumbo_text_col {
+  margin-bottom: 20px;
+}
+
+/*** sezione social media ***/
+.ms_social_media {
+  padding: 50px 0;
+}
+.ms_social_media h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  padding-bottom: 50px;
+  font-weight: bold;
 }
 
 /********* REGOLE RESPONSIVE **********/
