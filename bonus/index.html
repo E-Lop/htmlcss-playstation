@@ -29,82 +29,63 @@
       <div class="header-bottom">
         <!-- box per restingere tutto header-bottom -->
         <div class="ms_header_box">
-          <div class="container-fluid">
-            <div class="row">
-              <!-- colonna sinistra di header-bottom -->
-              <div class="col-8 ms_header_left_menu">
-                <img
-                  class="ps_logo"
-                  src="img/play_logo.svg"
-                  alt="Logo Playstation"
-                />
-                <!-- menu di navigazione esteso -->
-                <nav class="ms_header_xtd_menu_left">
-                  <ul>
-                    <!-- singolo elemento menu header sinistro -->
-                    <li>
-                      <a href="#"
-                        >Giochi <i class="fa-solid fa-chevron-down"></i
-                      ></a>
-                    </li>
-                    <!-- singolo elemento menu header sinistro -->
-                    <li>
-                      <a href="#"
-                        >Hardware <i class="fa-solid fa-chevron-down"></i
-                      ></a>
-                    </li>
-                    <!-- singolo elemento menu header sinistro -->
-                    <li>
-                      <a href="#"
-                        >Servizi <i class="fa-solid fa-chevron-down"></i
-                      ></a>
-                    </li>
-                    <!-- singolo elemento menu header sinistro -->
-                    <li>
-                      <a href="#"
-                        >Novità <i class="fa-solid fa-chevron-down"></i
-                      ></a>
-                    </li>
-                    <!-- singolo elemento menu header sinistro -->
-                    <li>
-                      <a href="#"
-                        >Fai acquisti <i class="fa-solid fa-chevron-down"></i
-                      ></a>
-                    </li>
-                    <!-- singolo elemento menu header sinistro -->
-                    <li>
-                      <a href="#"
-                        >Supporto <i class="fa-solid fa-chevron-down"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-              <!-- colonna destra di header-bottom -->
-              <div class="col-4 ms_burger_menu">
-                <!-- menu di navigazione esteso -->
-                <div class="ms_header_xtd_menu_right">
-                  <a href="#"
-                    >My PLayStation <i class="fa-solid fa-chevron-down"></i
-                  ></a>
-                  <button type="button" class="btn ms_btn_drk_rounded">
-                    Accedi
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="img/play_logo.svg" alt="logo playstation" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Giochi
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    Search
                   </button>
-                  <a href="#">
-                    <img
-                      class="search_lens"
-                      src="img/lens.svg"
-                      alt="lente di ingrandimento"
-                    />
-                  </a>
-                </div>
-                <!-- icona burger menu -->
-                <div class="ms_burger_menu_narrow_screens">
-                  <i class="fa-solid fa-bars"></i>
-                </div>
+                </form>
               </div>
             </div>
-          </div>
+          </nav>
         </div>
       </div>
     </header>
@@ -679,5 +660,10 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

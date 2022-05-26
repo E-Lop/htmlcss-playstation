@@ -123,6 +123,15 @@ header {
   margin-right: 15px;
 }
 
+/*** bootstrap navbar ***/
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  position: fixed;
+  top: 115px;
+  left: 0;
+  right: 0;
+  border: none;
+}
+
 /* header bottom */
 .header-bottom {
   display: flex;
