@@ -7,7 +7,6 @@
   box-sizing: border-box;
 }
 
-/* immagini */
 img {
   width: 100%;
   display: block;
@@ -22,6 +21,45 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+/*** UTILITIES ***/
+.sub_text {
+  color: #727272;
+}
+.claim {
+  color: #0072ce;
+}
+.ms_highlighted {
+  border-bottom: 2px solid #3991d9;
+}
+
+/* bottoni */
+.ms_btn_red {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  border-radius: 20px;
+}
+.ms_btn_blue {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  border-radius: 20px;
+}
+.ms_btn_gray {
+  color: #3a6de5;
+  font-weight: bold;
+  background-color: #d9dadc;
+  border-color: #d9dadc;
+  border-radius: 15px;
+}
+.btn_off-white {
+  color: #000;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border-color: #f5f5f5;
+  border-radius: 20px;
 }
 
 /***** HEADER *****/
@@ -39,29 +77,35 @@ header {
 .header-top {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   background-color: black;
   height: 40px;
   text-align: right;
 }
+
 .header-top img {
   width: 80px;
   display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
-/* headeer bottom */
+/* header bottom */
 .header-bottom {
+  display: flex;
+  justify-content: center;
   background-color: white;
 }
-/* altezza piu margine formano altezza header-bottom */
+/* altezza logo determina altezza header-bottom */
 .ps_logo {
-  width: 40px;
+  width: 80px;
   margin-right: 10px;
-  margin: 20px 0;
+}
+.header-bottom a {
+  font-weight: bold;
 }
 /* elemento che restringe header bottom */
 .ms_header_box {
+  width: 100%;
   padding: 0 10px;
 }
 
@@ -87,7 +131,7 @@ header {
 }
 .ms_burger_menu_narrow_screens i {
   margin-left: 10px;
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 .ms_btn_drk_rounded {
   color: #fff;
@@ -130,7 +174,7 @@ main {
 .ms_jumbotron .container {
   height: 100%;
 }
-.ms_jumbotron .container .align-items-end {
+.ms_jumbotron .container .row {
   height: 100%;
 }
 .ms_jumbo_text_col > * {
@@ -142,13 +186,6 @@ main {
   margin-bottom: 40px;
 }
 
-/* bottone acquista ora */
-.ms_btn_red {
-  color: #fff;
-  background-color: #dc3545;
-  border-color: #dc3545;
-  border-radius: 20px;
-}
 /* logo del videogioco dimensioni relative */
 .ms_game_hero_logo {
   width: 60%;
@@ -168,9 +205,6 @@ main {
 .ms_thumbnails img {
   border-radius: 15px;
 }
-.ps5_hardware p {
-  font-size: 1.5rem;
-}
 .ms_selected {
   outline: 2px solid #0072ce;
   outline-offset: 3px;
@@ -181,25 +215,15 @@ main {
   text-align: center;
   padding-bottom: 40px;
 }
-.claim {
-  color: #0072ce;
-}
-.sub_text {
-  color: #727272;
+.ps5_hardware p {
+  font-size: 1.5rem;
 }
 .ps5_hardware h2 {
   font-size: 2.8rem;
 }
-.ms_btn_blue {
-  color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
-  border-radius: 20px;
-}
 .ms_sm_hw_thumb {
   padding: 20px 0;
 }
-
 .ms_inv_hw_description {
   color: gray;
   font-size: 0.8rem;
@@ -208,15 +232,11 @@ main {
 .ms_hw_card {
   height: 100%;
 }
-.ms_highlighted {
-  border-bottom: 2px solid #3991d9;
-}
 .ms_highlighted .ms_inv_hw_description {
   color: black;
 }
 
 /*** sezione secondo jumbotron ***/
-
 .ms_jumbo_bg_img_2 {
   background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
   background-repeat: no-repeat;
@@ -264,14 +284,6 @@ main {
 .ms_playstation_plus p {
   font-weight: bold;
 }
-
-.ms_btn_gray {
-  color: #3a6de5;
-  font-weight: bold;
-  background-color: #d9dadc;
-  border-color: #d9dadc;
-  border-radius: 15px;
-}
 .ms_inv_col2 {
   display: none;
 }
@@ -299,13 +311,6 @@ main {
 .ms_playstation_now {
   background-color: #161c3b;
   color: white;
-}
-.btn_off-white {
-  color: #000;
-  font-weight: bold;
-  background-color: #f5f5f5;
-  border-color: #f5f5f5;
-  border-radius: 20px;
 }
 .ms_playstation_now .ms_jumbo_text_col {
   margin-bottom: 20px;
@@ -349,12 +354,14 @@ footer {
 /********* REGOLE RESPONSIVE **********/
 /* layout medium */
 @media screen and (min-width: 768px) {
+  /* testo accessori sezione playstation5 diventa visibile */
   .ms_inv_hw_description {
     display: block;
   }
   .ms_sm_hw_thumb {
     justify-content: space-between;
   }
+  /* seconda colonna nel secondo jumbotron */
   .ms_inv_col2 {
     display: block;
   }
@@ -362,13 +369,16 @@ footer {
 
 /* layout large */
 @media screen and (min-width: 992px) {
+  /* fa comparire i menu estesi */
   .ms_header_xtd_menu_left,
   .ms_header_xtd_menu_right {
     display: inline-block;
   }
+  /* fa scomparire il burger menu */
   .ms_burger_menu_narrow_screens {
     display: none;
   }
+  /* seconda colonna n */
   .ms_inv_col1 {
     display: block;
   }
