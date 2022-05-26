@@ -75,7 +75,7 @@ a {
   border-width: 2px;
 }
 
-/* effetti hover */
+/* effetti hover sui bottoni */
 button:hover {
   outline: 2px solid white;
   outline-offset: -4px;
@@ -83,6 +83,17 @@ button:hover {
 .btn_off-white:hover {
   outline: 2px solid #161c3b;
   outline-offset: -4px;
+}
+/* effetti hover sulle thumbnail dei giochi */
+.ms_thumbnails img:hover {
+  transform: translate(0, -20px);
+}
+.ms_hw_card:hover .ms_inv_hw_description {
+  color: black;
+}
+/* effetti hover su accessori PS5 */
+.ms_hw_card:hover {
+  border-bottom: 2px solid #3991d9;
 }
 
 /***** HEADER *****/
@@ -215,7 +226,7 @@ main {
 
 /*** sezione thumbnails ***/
 .ms_thumbnails {
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 100px;
 }
 .ms_thumbnails img {
