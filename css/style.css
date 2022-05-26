@@ -171,6 +171,10 @@ main {
 .ps5_hardware p {
   font-size: 1.5rem;
 }
+.ms_selected {
+  outline: 2px solid #0072ce;
+  outline-offset: 3px;
+}
 
 /*** sezione PS5 Hardware ***/
 .ps5_hardware_intro {
