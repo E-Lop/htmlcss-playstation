@@ -216,9 +216,6 @@ main {
 .ms_jumbotron h2 {
   font-size: 2.5rem;
 }
-.ms_inv_col1 {
-  display: none;
-}
 
 /*** sezione thumbnails ***/
 .ms_thumbnails {
@@ -400,9 +397,5 @@ footer {
   /* fa scomparire il burger menu */
   .ms_burger_menu_narrow_screens {
     display: none;
-  }
-  /* seconda colonna jumbotron */
-  .ms_inv_col1 {
-    display: block;
   }
 }
