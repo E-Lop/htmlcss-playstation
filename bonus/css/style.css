@@ -73,6 +73,9 @@ a {
   border-radius: 20px;
   border-width: 2px;
 }
+.rounded-pill {
+  margin: 0 20px;
+}
 
 /* effetti hover sui bottoni */
 button:hover {
@@ -129,7 +132,33 @@ header {
   top: 115px;
   left: 0;
   right: 0;
-  border: none;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu img {
+  width: fit-content;
+}
+.navbar-expand-lg .navbar-nav li {
+  display: flex;
+  justify-content: center;
+}
+.navbar-expand-lg .navbar-nav a {
+  width: fit-content;
+}
+.play-menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.play_sub_menu {
+  display: flex;
+  justify-content: center;
+}
+.play_sub_menu li {
+  padding: 0 20px;
+}
+.dropdown-divider {
+  height: 1px;
+  width: 100%;
+  color: gray;
 }
 
 /* header bottom */
