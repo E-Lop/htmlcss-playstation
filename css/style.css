@@ -1,6 +1,6 @@
-/*** COMMON ***/
+/***** COMMON *****/
 
-/* RESET */
+/*** RESET ***/
 * {
   margin: 0;
   padding: 0;
@@ -123,7 +123,7 @@ main {
   background-image: url(../img/jumbo-bg.png);
   background-repeat: no-repeat;
   background-position: center;
-  /* todo test */
+  background-color: #000;
   height: 675px;
 }
 
